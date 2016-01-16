@@ -3,7 +3,7 @@
 	function getConnection(){
 		$database = "localhost";
 		$user = "root";
-		$password = "p4ssM3";
+		$password = "";
 		$database_name = "PROIECT_CAMIL";
 
 		$connection = mysql_connect($database, $user, $password);
