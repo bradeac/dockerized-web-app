@@ -1,3 +1,3 @@
 FROM tomsik68/xampp
 
-RUN cp /src/ ../www
+RUN cd ..;cp xampp-web-app/src/ www/
