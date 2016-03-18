@@ -4,7 +4,7 @@
 		$database = "localhost";
 		$user = "root";
 		$password = "";
-		$database_name = "PROIECT_CAMIL";
+		$database_name = "PROIECT";
 
 		$connection = mysql_connect($database, $user, $password);
 
