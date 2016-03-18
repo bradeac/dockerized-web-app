@@ -1,7 +1,7 @@
 FROM tomsik68/xampp
 
 ADD src/ www/
-&& PROIECT/ /opt/lampp/var/mysql/
+ADD PROIECT/ /opt/lampp/var/mysql/PROIECT
 
 RUN /bin/bash -c "/opt/lampp/lampp start"
 	
