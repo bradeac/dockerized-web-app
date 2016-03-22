@@ -1,9 +1,9 @@
 <?php
 	
 	function getConnection(){
-		$database = "localhost";
+		$database = "mysql";
 		$user = "root";
-		$password = "";
+		$password = "root";
 		$database_name = "PROIECT";
 
 		$connection = mysql_connect($database, $user, $password);
