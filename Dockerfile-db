@@ -1,6 +1,5 @@
-FROM mariadb
+FROM mysql
 
-EXPOSE 3306
 
 #docker build -f Dockerfile-db -t bradeac/db .
 

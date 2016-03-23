@@ -1,23 +1,22 @@
-version: 2
+version: "2"
 services:
   mysql:
     image: mysql
+    container_name: mysql
     ports:
      - 3306:3306
     volumes:
-     - src:/tmp
+     - ./src:/new
     environment:
         MYSQL_ROOT_PASSWORD: root
         MYSQL_DATABASE: PROIECT
-        MYSQL_USER: root
-        MYSQL_PASSWORD: root
+        #MYSQL_USER: root
+        #MYSQL_PASSWORD: root
   php:
     image: bradeac/php
     ports:
      - 41062:80
     volumes:
-     - src:/var/www/html
+     - ./src:/var/www/html
     links:
      - mysql
-
-
