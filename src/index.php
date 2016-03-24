@@ -16,8 +16,8 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Cum sa folosesti aplicatia?</h1>
-      	<p> Aici text! </p>
+        <h1>Proiect</h1>
+      	<p></p>
       </div>
 
     </div> <!-- /container -->
