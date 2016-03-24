@@ -1,6 +1,6 @@
 FROM mysql
 
-
+EXPOSE 3306
 #docker build -f Dockerfile-db -t bradeac/db .
 
 #docker run --name db -e MYSQL_ROOT_PASSWORD=rs6avant -d bradeac/db

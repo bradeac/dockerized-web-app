@@ -4,7 +4,9 @@ services:
     image: mysql
     container_name: mysql
     ports:
-     - 3306:3306
+     - "3306:3306"
+    expose:
+     - "3306"
     volumes:
      - ./src:/new
     environment:

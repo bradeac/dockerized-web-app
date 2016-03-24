@@ -7,11 +7,9 @@
 		$database_name = "PROIECT";
 
 		$connection = mysql_connect($database, $user, $password);
-
 		if($connection){
 			mysql_select_db($database_name);			
 		}
-
 		return $connection;
 	}
 

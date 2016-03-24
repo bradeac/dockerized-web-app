@@ -42,7 +42,7 @@
 
     <script type="text/javascript">
       //clock part
-      displayDatetime()
+      //displayDatetime()
     
     </script>
 
