@@ -4,5 +4,5 @@ COPY src/ /var/www/html/
 
 #docker build -f Dockerfile-php -t bradeac/php .
 
-#docker run --name php --link db:mysql -p 41062:80 -d bradeac/php
+#docker run --name php --link mysql:mysql -p 41062:80 -d bradeac/php
 

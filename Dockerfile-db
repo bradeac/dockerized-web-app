@@ -3,10 +3,9 @@ FROM mysql
 EXPOSE 3306
 #docker build -f Dockerfile-db -t bradeac/db .
 
-#docker run --name db -e MYSQL_ROOT_PASSWORD=rs6avant -d bradeac/db
+#docker run --name mysql -e MYSQL_ROOT_PASSWORD=password -d bradeac/mysql
 
-#docker run -it --link db:mysql --rm mariadb sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -prs6avant'
-
+#docker run -it --link mysql:mysql --rm mariadb sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -ppassword'
 
 #mysql -proot PROIECT < tmp/sql/proiect.sql
 
