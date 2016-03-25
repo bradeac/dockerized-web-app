@@ -11,7 +11,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Proiect</a>
+          <a class="navbar-brand" href="#">Proiect TI</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -24,10 +24,15 @@
               </ul>
             </li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-              
+          <ul class="nav navbar-nav navbar-right"> 
             <li><a id="datetime_area" href="#"></a></li>
-            <li><a href="reports.php">Rapoarte</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rapoarte <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="stat_plata.php">Stat de plata</a></li>
+                <li><a href="fluturasi.php">Fluturasi</a></li>
+              </ul>
+            </li>
             <li><a href="percentages.php">Procente</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -42,7 +47,7 @@
 
     <script type="text/javascript">
       //clock part
-      //displayDatetime()
+      displayDatetime()
     
     </script>
 
