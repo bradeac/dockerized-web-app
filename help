@@ -1,0 +1,13 @@
+---------------------- build Dockerfiles -------------------------------
+#docker build -f Dockerfile-db -t bradeac/db .
+#docker build -f Dockerfile-php -t bradeac/php .
+
+
+---------------------- run commands for mysql image --------------------
+#docker run --name mysql -e MYSQL_ROOT_PASSWORD=password -d bradeac/mysql
+
+---------------------- load sql dump file ------------------------------
+#mysql -proot PROIECT < tmp/sql/proiect.sql
+
+---------------------- run command for php image -----------------------
+#docker run --name php --link mysql:mysql -p 41062:80 -d bradeac/php
