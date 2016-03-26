@@ -1,4 +1,4 @@
-FROM mysql
+FROM mysql:5.7
 
 EXPOSE 3306
 #docker build -f Dockerfile-db -t bradeac/db .
