@@ -1,8 +1,6 @@
 FROM php:5.6-apache
-RUN docker-php-ext-install mysql mysqli pdo pdo_mysql
-COPY src/ /var/www/html/
+RUN docker-php-ext-install mysql mysqli
 
 #docker build -f Dockerfile-php -t bradeac/php .
-
 #docker run --name php --link mysql:mysql -p 41062:80 -d bradeac/php
 
