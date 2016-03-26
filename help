@@ -1,13 +1,19 @@
 ---------------------- build Dockerfiles -------------------------------
-#docker build -f Dockerfile-db -t bradeac/db .
-#docker build -f Dockerfile-php -t bradeac/php .
+docker build -f Dockerfile-db -t bradeac/db .
+docker build -f Dockerfile-php -t bradeac/php .
+
+---------------------- docker-machine command --------------------------
+docker-machine create -d azure --azure-location="West Europe" --azure-size="Standard_D3" --azure-open-port=41062 --azure-subscription-id="ad6719c6-4cb7-4bec-8d58-6b5abab6eaf1" techlunch-docker
 
 
----------------------- run commands for mysql image --------------------
-#docker run --name mysql -e MYSQL_ROOT_PASSWORD=password -d bradeac/mysql
 
----------------------- load sql dump file ------------------------------
-#mysql -proot PROIECT < tmp/sql/proiect.sql
 
----------------------- run command for php image -----------------------
-#docker run --name php --link mysql:mysql -p 41062:80 -d bradeac/php
+
+---------------------- manual run commands for mysql image --------------------
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=password -d bradeac/mysql
+
+---------------------- manual load sql dump file ------------------------------
+mysql -proot PROIECT < tmp/sql/proiect.sql
+
+---------------------- manual run command for php image -----------------------
+docker run --name php --link mysql:mysql -p 41062:80 -d bradeac/php
