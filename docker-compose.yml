@@ -13,7 +13,7 @@ services:
   php:
     image: bradeac/php
     ports:
-     - 41062:80
+     - "41062:80"
   data:
     image: bradeac/data
     container_name: data
