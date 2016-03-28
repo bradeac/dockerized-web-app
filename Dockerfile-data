@@ -1,0 +1,5 @@
+FROM ubuntu:14.04
+ADD /src/sql /docker-entrypoint-initdb.d
+RUN chmod -R a+x+w+r /docker-entrypoint-initdb.d
+VOLUME /docker-entrypoint-initdb.d
+
