@@ -12,6 +12,7 @@ services:
         MYSQL_DATABASE: PROIECT
   php:
     image: bradeac/php
+    container_name: php
     ports:
      - "41062:80"
   data:
